@@ -8,6 +8,7 @@ public class Pasajero {
     private String nombre;
     private Direccion direccion;
     private Telefono telefono;
+    //private int[] telefono = new int[2];
 
     public Pasajero() {
     }

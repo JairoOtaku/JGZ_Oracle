@@ -3,17 +3,17 @@ package Clases;
 // @author Jairo_Otaku
 public class Telefono {
 
-    private int[] telefonos = new int[2];
+    private String[] telefonos = new String[2];
 
-    public Telefono(int[] telefonos) {
+    public Telefono(String[] telefonos) {
         this.telefonos = telefonos;
     }
 
-    public int[] getTelefonos() {
+    public String[] getTelefonos() {
         return telefonos;
     }
 
-    public void setTelefonos(int[] telefonos) {
+    public void setTelefonos(String[] telefonos) {
         this.telefonos = telefonos;
     }
 }

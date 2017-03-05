@@ -2,8 +2,6 @@ package Modelo;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import Clases.Pasajero;
 import Clases.Telefono;
@@ -20,7 +18,7 @@ public class PasajeroModelo {
     //int codPasajero, String nif, String nombre, Direccion direccion, Telefono telefono
     public void insertPasajero(Pasajero pasajero) {
         Connection conn = db.getConexion();
-        int[] telefonos = telpho.getTelefonos();
+        String[] telefonos = telpho.getTelefonos();
 
         try {
             if (telefonos.length <= 1) {
@@ -46,7 +44,7 @@ public class PasajeroModelo {
     public void updatePasajero(Pasajero pasajero) {
 
         Connection conn = db.getConexion();
-        int[] telefonos = telpho.getTelefonos();
+        String[] telefonos = telpho.getTelefonos();
         try {
             PLSQL = "{call UPDATE_PASAJERO (" + pasajero.getCodPasajero() + ",'" + pasajero.getNif()
                     + "','" + pasajero.getNombre() + "','" + direc.getCalle() + "',"
