@@ -7,11 +7,11 @@ import java.sql.SQLException;
 import javax.swing.table.DefaultTableModel;
 
 // @author Jairo_Otaku
-public class CargaDatos {
+public class CargaTablas {
 
     Conexion db;
 
-    public CargaDatos(Conexion db) {
+    public CargaTablas(Conexion db) {
         this.db = db;
     }
 
@@ -93,9 +93,7 @@ public class CargaDatos {
                 datos[i][0] = rs.getString("CODIGOPERSONAL");
                 datos[i][1] = rs.getString("NOMBRE");
                 datos[i][2] = rs.getString("CATEGORIA");
-
                 i++;
-
             }
             tabla.setDataVector(datos, comlunas);
             rs.close();

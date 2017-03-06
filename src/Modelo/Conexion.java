@@ -9,7 +9,7 @@ public class Conexion {
 
     private static final String DB_DRIVER = "oracle.jdbc.driver.OracleDriver";
     private static final String DB_CONNECTION = "jdbc:oracle:thin:@localhost:1521:xe";
-    private static final String DB_USER = "SYSTEM";
+    private static final String DB_USER = "SYS";
     private static final String DB_PASS = "jairo";
 
     public Connection getConexion() {

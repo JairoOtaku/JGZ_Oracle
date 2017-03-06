@@ -109,6 +109,11 @@ public class MainView extends javax.swing.JFrame {
         jScrollPane4.setViewportView(tablaPersonal);
 
         btnAcepVuelo.setText("Añade");
+        btnAcepVuelo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAcepVueloActionPerformed(evt);
+            }
+        });
 
         btnModVuelo.setText("Modifica");
 
@@ -237,6 +242,10 @@ public class MainView extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnAcepVueloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAcepVueloActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAcepVueloActionPerformed
 
     /**
      * @param args the command line arguments
